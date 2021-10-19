@@ -1,17 +1,13 @@
 {
-  "name": "ts-boilerplate",
+  "name": "kata-odds-number-ts",
   "version": "1.0.0",
-  "description": "TypeScript boilerplate",
+  "description": "Kata Odds Numbers",
   "main": "build/index.js",
   "files": [
     "build",
     "!build/**/*.test.*"
   ],
   "scripts": {
-    "prepare": "npm run build",
-    "prestart": "npm run build",
-    "start": "node build/index.js",
-    "dev": "npm run build -- --watch & nodemon build/index.js",
     "build": "npm run lint && npm test && tsc",
     "lint": "eslint . --ext .ts",
     "lint:fix": "npm run lint -- --fix",
@@ -21,10 +17,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ulisesantana/ts-boilerplate.git"
+    "url": "git+https://github.com/lean-mind/kata-odds-number-ts.git"
   },
   "keywords": [],
-  "author": "Ulises Santana <ulisesantana@gmail.com>",
+  "author": "Ulises Santana <ulises.santana@leanmind.es>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ulisesantana/ts-boilerplate/issues"
@@ -40,7 +36,6 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
-    "husky": "^4.2.5",
     "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
     "nodemon": "^1.19.4",
