@@ -13,7 +13,10 @@
     "lint:fix": "npm run lint -- --fix",
     "test": "jest --verbose",
     "test:watch": "npm t -- --watchAll",
-    "test:coverage": "npm t -- --coverage"
+    "test:coverage": "npm t -- --coverage",
+    "git:red" : "git add . && git commit -m \"\uD83E\uDDEA Failing test\" && git push",
+    "git:green" : "git add . && git commit -m \"✅ Pass test\" && git push",
+    "git:refactor" : "git add . && git commit -m \"♻️ Refactor test\" && git push"
   },
   "repository": {
     "type": "git",
@@ -23,9 +26,9 @@
   "author": "Ulises Santana <ulises.santana@leanmind.es>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ulisesantana/ts-boilerplate/issues"
+    "url": "https://github.com/lean-mind/kata-odds-number-ts/issues"
   },
-  "homepage": "https://github.com/ulisesantana/ts-boilerplate#readme",
+  "homepage": "https://github.com/lean-mind/kata-odds-number-ts#readme",
   "devDependencies": {
     "@types/jest": "^26.0.5",
     "@types/node": "^14.14.10",
